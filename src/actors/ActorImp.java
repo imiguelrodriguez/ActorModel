@@ -1,3 +1,7 @@
+package actors;
+
+import messages.Message;
+
 import java.util.LinkedList;
 import java.util.Queue;
 
