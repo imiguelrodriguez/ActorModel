@@ -2,19 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added classes and packages to the Actor Model">
-      <change afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/InsultActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/messages/InsultMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ActorContext.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AddInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/AddInsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetAllInsultsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/GetAllInsultsMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GetInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Message.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/QuitMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/QuitMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,9 +45,17 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="messages" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -74,7 +79,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669742067737</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added classes and packages to the Actor Model">
+      <created>1669836864123</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1669836864123</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -93,5 +105,20 @@
     <MESSAGE value="More changes to the Actor Model" />
     <MESSAGE value="Added classes and packages to the Actor Model" />
     <option name="LAST_COMMIT_MESSAGE" value="Added classes and packages to the Actor Model" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/ProxyTest.java</url>
+          <line>8</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

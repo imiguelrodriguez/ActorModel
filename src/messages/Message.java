@@ -12,4 +12,8 @@ public class Message {
     public String getText() {
         return text;
     }
+
+    public ActorImp getFrom() {
+        return this.from;
+    }
 }

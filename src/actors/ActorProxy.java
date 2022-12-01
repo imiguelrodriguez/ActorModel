@@ -6,10 +6,12 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class ActorProxy implements Actor {
-    private static ActorImp actor;
+    private ActorImp actor;
     private Queue<Message> queue = new LinkedList<>();
-    public ActorProxy () {
-
+    public ActorProxy (Actor actor) {
+        this.actor = (ActorImp) actor;
+        Thread th = new Thread(this.actor);
+        th.start();
     }
 
     @Override
@@ -22,5 +24,9 @@ public class ActorProxy implements Actor {
 
     public Message receive() {
         return null;
+    }
+
+    public ActorImp getActor() {
+        return this.actor;
     }
 }

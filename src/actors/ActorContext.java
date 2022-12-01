@@ -8,9 +8,6 @@ public class ActorContext {
     private Map<String, Actor> actors = new HashMap<>();
     private static ActorContext instance;
 
-    private ActorContext () {
-    }
-
     public static ActorContext getInstance() {
         if(instance == null)
             instance = new ActorContext();
@@ -20,7 +17,7 @@ public class ActorContext {
     public ActorProxy spawnActor(String name, Actor actor) {
         if(!actors.containsKey(name))
             actors.put(name, actor);
-        return new ActorProxy();
+        return new ActorProxy(actor);
     }
 
     public ActorProxy lookup(String name) {
