@@ -5,9 +5,12 @@ import messages.QuitMessage;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.BlockingDeque;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ActorImp implements Actor, Runnable {
-    private Queue<Message> mailbox = new LinkedList<>();
+    private BlockingQueue<Message> mailbox = new LinkedBlockingQueue<>();
     private Message state;
 
     public ActorImp() {

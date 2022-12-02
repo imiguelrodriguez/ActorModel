@@ -9,6 +9,8 @@ public class ProxyTest {
         ActorProxy aProxy1 = actors.spawnActor("actor1", new InsultActor());
         ActorProxy aProxy2 = actors.spawnActor("actor2", new InsultActor());
         ActorProxy aProxy3 = actors.spawnActor("actor3", new HelloWorldActor());
+        ActorProxy aProxy4 = actors.spawnActor("actor4", new InsultActor());
+        aProxy4.send(new AddInsultMessage("Idiot"));
         aProxy1.send(new InsultMessage(null, "Fuck you!"));
         aProxy3.send(new Message(null, "First message , helloo!"));
         aProxy2.send(new InsultMessage(aProxy1.getActor(), "Dumbass!"));

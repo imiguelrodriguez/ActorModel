@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added classes and packages to the Actor Model">
-      <change afterPath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/actors/InsultActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/messages/InsultMessage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="First part of the Actor Model working.">
+      <change afterPath="$PROJECT_DIR$/src/actors/ActorDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/actors/LambdaFirewallDecorator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/InsultActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/InsultActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/AddInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/AddInsultMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,18 +40,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "DefaultHtmlFileTemplate": "HTML File",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "project.structure.last.edited": "Project",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="messages" />
@@ -86,7 +86,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669836864123</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="First part of the Actor Model working.">
+      <created>1669884751674</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669884751674</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -104,18 +111,8 @@
     <MESSAGE value="First classes for the Actor Model" />
     <MESSAGE value="More changes to the Actor Model" />
     <MESSAGE value="Added classes and packages to the Actor Model" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes and packages to the Actor Model" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/ProxyTest.java</url>
-          <line>8</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="First part of the Actor Model working." />
+    <option name="LAST_COMMIT_MESSAGE" value="First part of the Actor Model working." />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

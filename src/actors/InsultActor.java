@@ -23,11 +23,14 @@ public class InsultActor extends ActorImp {
             }
             case AddInsultMessage m2 -> {
                 System.out.println("AddInsultMessage");
+                this.insults.add(new InsultMessage(m2.getFrom(), m2.getText()));
                 super.send(message);
             }
             case GetAllInsultsMessage m3 -> {
                 System.out.println("GetAllInsultsMessage");
                 super.send(message);
+                for(InsultMessage insult: this.insults)
+                    System.out.println(insult.getText());
             }
             default -> System.out.println("Message not accepted");
         }

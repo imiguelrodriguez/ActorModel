@@ -23,7 +23,9 @@ public class ActorProxy implements Actor {
     }
 
     public Message receive() {
-        return null;
+        if(!queue.isEmpty())
+            return queue.poll();
+        else return null;
     }
 
     public ActorImp getActor() {
