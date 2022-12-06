@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added Decorator classes (not implemented). ActorProxy receiving messages not implemented yet.">
-      <change afterPath="$PROJECT_DIR$/src/messages/AddClosureMessage.java" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="ActorProxy receiving messages. Changed from Queue to BlockingQueue to avoid stalling (while queue empty). InsultActor can now respond to its proxy by retrieving the sender of the Message (from) and casting to ActorProxy to get access to its queue.">
+      <change afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorDecorator.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actors/InsultActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/InsultActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/GetAllInsultsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/GetAllInsultsMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/LambdaFirewallDecorator.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670000171936</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="ActorProxy receiving messages. Changed from Queue to BlockingQueue to avoid stalling (while queue empty). InsultActor can now respond to its proxy by retrieving the sender of the Message (from) and casting to ActorProxy to get access to its queue.">
+      <created>1670341964494</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1670341964494</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,7 +125,19 @@
     <MESSAGE value="Added classes and packages to the Actor Model" />
     <MESSAGE value="First part of the Actor Model working." />
     <MESSAGE value="Added Decorator classes (not implemented). ActorProxy receiving messages not implemented yet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Decorator classes (not implemented). ActorProxy receiving messages not implemented yet." />
+    <MESSAGE value="ActorProxy receiving messages. Changed from Queue to BlockingQueue to avoid stalling (while queue empty). InsultActor can now respond to its proxy by retrieving the sender of the Message (from) and casting to ActorProxy to get access to its queue." />
+    <option name="LAST_COMMIT_MESSAGE" value="ActorProxy receiving messages. Changed from Queue to BlockingQueue to avoid stalling (while queue empty). InsultActor can now respond to its proxy by retrieving the sender of the Message (from) and casting to ActorProxy to get access to its queue." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/actors/ActorImp.java</url>
+          <line>22</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -1,7 +1,8 @@
 package actors;
 
-public class LambdaFirewallDecorator extends ActorDecorator {
+public class LambdaFirewallDecorator extends ActorImp {
+    private ActorImp actor;
     public LambdaFirewallDecorator(ActorImp actor) {
-        super(actor);
+        this.actor = actor;
     }
 }

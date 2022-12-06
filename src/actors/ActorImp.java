@@ -3,8 +3,6 @@ package actors;
 import messages.Message;
 import messages.QuitMessage;
 
-import java.util.LinkedList;
-import java.util.Queue;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -33,7 +31,7 @@ public class ActorImp implements Actor, Runnable {
         System.out.println("Killing process...");
     }
 
-    protected void process(Message message) {
+    public void process(Message message) {
         if(message!=null) {
             if(message.getFrom()!=null)
                 System.out.print(message.getFrom()+" ");

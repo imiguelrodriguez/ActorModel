@@ -15,7 +15,7 @@ public class InsultActor extends ActorImp {
     }
 
     @Override
-    protected void process(Message message) {
+    public void process(Message message) {
         if(message!=null) {
         switch (message) {
             case GetInsultMessage m1 -> {
