@@ -5,7 +5,6 @@ import messages.QuitMessage;
 
 import java.util.LinkedList;
 import java.util.Queue;
-import java.util.concurrent.BlockingDeque;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
@@ -18,10 +17,18 @@ public class ActorImp implements Actor, Runnable {
     }
 
     private void actorLoop() {
-        state = this.mailbox.poll();;
+        try {
+            state = this.mailbox.take();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         while(!(state instanceof QuitMessage)) {
             process(state);
-            state = this.mailbox.poll();
+            try {
+                state = this.mailbox.take();
+            } catch (InterruptedException e) {
+                throw new RuntimeException(e);
+            }
         }
         System.out.println("Killing process...");
     }
@@ -43,4 +50,5 @@ public class ActorImp implements Actor, Runnable {
     public void run() {
         actorLoop();
     }
+
 }

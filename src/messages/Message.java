@@ -1,10 +1,10 @@
 package messages;
 import actors.*;
 public class Message {
-    private ActorImp from;
+    private Actor from;
     private String text;
 
-    public Message (ActorImp from, String text) {
+    public Message (Actor from, String text) {
         this.from = from;
         this.text = text;
     }
@@ -13,7 +13,7 @@ public class Message {
         return text;
     }
 
-    public ActorImp getFrom() {
+    public Actor getFrom() {
         return this.from;
     }
 }

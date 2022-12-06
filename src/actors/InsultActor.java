@@ -15,24 +15,27 @@ public class InsultActor extends ActorImp {
     }
 
     @Override
-    public void send(Message message) {
+    protected void process(Message message) {
+        if(message!=null) {
         switch (message) {
             case GetInsultMessage m1 -> {
                 System.out.println("GetInsultMessage");
-                super.send(message);
+                Random rand = new Random();
+                InsultMessage randomInsult = this.insults.get(rand.nextInt(this.insults.size()));
+                ((ActorProxy) m1.getFrom()).getQueue().add(randomInsult);
             }
             case AddInsultMessage m2 -> {
                 System.out.println("AddInsultMessage");
-                this.insults.add(new InsultMessage(m2.getFrom(), m2.getText()));
-                super.send(message);
+                this.insults.add(new InsultMessage((ActorImp) m2.getFrom(), m2.getText()));
+
             }
             case GetAllInsultsMessage m3 -> {
                 System.out.println("GetAllInsultsMessage");
-                super.send(message);
-                for(InsultMessage insult: this.insults)
-                    System.out.println(insult.getText());
+                for (InsultMessage insult : this.insults)
+                    ((ActorProxy) m3.getFrom()).getQueue().add(insult);
             }
             default -> System.out.println("Message not accepted");
         }
+    }
     }
 }

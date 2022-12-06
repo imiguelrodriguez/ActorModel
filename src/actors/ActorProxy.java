@@ -4,10 +4,12 @@ import messages.Message;
 
 import java.util.LinkedList;
 import java.util.Queue;
+import java.util.concurrent.BlockingQueue;
+import java.util.concurrent.LinkedBlockingQueue;
 
 public class ActorProxy implements Actor {
     private ActorImp actor;
-    private Queue<Message> queue = new LinkedList<>();
+    private BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
     public ActorProxy (Actor actor) {
         this.actor = (ActorImp) actor;
         Thread th = new Thread(this.actor);
@@ -23,12 +25,18 @@ public class ActorProxy implements Actor {
     }
 
     public Message receive() {
-        if(!queue.isEmpty())
-            return queue.poll();
-        else return null;
+        try {
+            return queue.take();
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 
     public ActorImp getActor() {
         return this.actor;
+    }
+
+    public Queue<Message> getQueue() {
+        return queue;
     }
 }
