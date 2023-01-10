@@ -15,8 +15,12 @@ public class ActorContext {
     }
 
     public ActorProxy spawnActor(String name, Actor actor) {
-        if(!actors.containsKey(name))
+        if(!actors.containsKey(name)) {
+            ((ActorImp) actor).setName(name);
             actors.put(name, actor);
+            Thread th = new Thread(new ActorRunner(actor));
+            th.start();
+        }
         return new ActorProxy(actor);
     }
 

@@ -6,15 +6,20 @@ import messages.QuitMessage;
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
 
-public class ActorImp implements Actor, Runnable {
-    private BlockingQueue<Message> mailbox = new LinkedBlockingQueue<>();
+public class ActorImp implements Actor {
+    protected BlockingQueue<Message> mailbox = new LinkedBlockingQueue<>();
     private Message state;
+    private String name;
 
+    public ActorImp(String name) {
+        this.state = null;
+        this.name = name;
+    }
     public ActorImp() {
         this.state = null;
     }
 
-    private void actorLoop() {
+    public void actorLoop() {
         try {
             state = this.mailbox.take();
         } catch (InterruptedException e) {
@@ -44,9 +49,11 @@ public class ActorImp implements Actor, Runnable {
         this.mailbox.add(message);
     }
 
-    @Override
-    public void run() {
-        actorLoop();
+    public String getName() {
+        return name;
     }
 
+    public void setName(String name) {
+        this.name = name;
+    }
 }

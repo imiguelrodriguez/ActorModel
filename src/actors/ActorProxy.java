@@ -12,8 +12,7 @@ public class ActorProxy implements Actor {
     private BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
     public ActorProxy (Actor actor) {
         this.actor = (ActorImp) actor;
-        Thread th = new Thread(this.actor);
-        th.start();
+
     }
 
     @Override

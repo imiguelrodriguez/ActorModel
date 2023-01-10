@@ -6,7 +6,7 @@ import messages.QuitMessage;
 public class EncryptionDecorator extends ActorImp {
     private ActorImp actor;
     public EncryptionDecorator(ActorImp actor) {
-        super();
+        super(actor.getName());
         this.actor = actor;
     }
 
@@ -17,15 +17,17 @@ public class EncryptionDecorator extends ActorImp {
         if(message instanceof QuitMessage){
             encryptedMessage = new QuitMessage(this, encryptedString);
         }
-        else  encryptedMessage = new Message(this, encryptedString);
-        super.send(encryptedMessage);
+        else encryptedMessage = new Message(this, encryptedString);
+
+        this.mailbox.add(encryptedMessage);
+        this.actor.send(encryptedMessage);
     }
 
     @Override
     public void process(Message message) {
         String decryptedString = EncryptionDecorator.decipher(message.getText());
         Message decryptedMessage = new Message(this, decryptedString);
-        super.process(decryptedMessage);
+        this.actor.process(decryptedMessage);
     }
 
     private static String encrypt(String message) {
