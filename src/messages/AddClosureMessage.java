@@ -2,8 +2,16 @@ package messages;
 
 import actors.ActorImp;
 
+import java.util.function.Predicate;
+
 public class AddClosureMessage extends Message {
-    public AddClosureMessage(ActorImp from, String text) {
-        super(from, text);
+    Predicate<Message> predicate;
+    public AddClosureMessage(ActorImp from, Predicate<Message> predicate) {
+        super(from, "");
+        this.predicate = predicate;
+    }
+
+    public Predicate<Message> getPredicate() {
+        return this.predicate;
     }
 }

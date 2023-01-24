@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="EncryptionDecorator working, although treatment for QuitMessage is not completely revised.">
-      <change afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner.">
+      <change afterPath="$PROJECT_DIR$/src/actors/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorCreation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorFinalization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorIncorrectFinalization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/ActorReceived.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/observer/MonitorService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/EncryptionDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/AddClosureMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/AddClosureMessage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,8 +26,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -116,7 +121,14 @@
       <option name="project" value="LOCAL" />
       <updated>1670345401320</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner.">
+      <created>1673388437920</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1673388437920</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -138,7 +150,8 @@
     <MESSAGE value="Added Decorator classes (not implemented). ActorProxy receiving messages not implemented yet." />
     <MESSAGE value="ActorProxy receiving messages. Changed from Queue to BlockingQueue to avoid stalling (while queue empty). InsultActor can now respond to its proxy by retrieving the sender of the Message (from) and casting to ActorProxy to get access to its queue." />
     <MESSAGE value="EncryptionDecorator working, although treatment for QuitMessage is not completely revised." />
-    <option name="LAST_COMMIT_MESSAGE" value="EncryptionDecorator working, although treatment for QuitMessage is not completely revised." />
+    <MESSAGE value="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -149,13 +162,13 @@
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/actors/FirewallDecorator.java</url>
+          <url>file://$PROJECT_DIR$/src/decorators/FirewallDecorator.java</url>
           <line>13</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/tests/DecoratorTest.java</url>
-          <line>18</line>
+          <line>20</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
       </breakpoints>

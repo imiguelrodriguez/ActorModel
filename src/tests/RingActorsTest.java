@@ -8,7 +8,7 @@ import messages.Message;
 public class RingActorsTest {
     static long iniTime;
     public static void main(String[] args) {
-        int MAX = 100;
+        int MAX = 10000;
 
         RingActor[] actors = new RingActor[MAX];
         ActorContext context = ActorContext.getInstance();

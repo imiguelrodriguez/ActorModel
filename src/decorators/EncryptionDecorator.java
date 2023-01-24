@@ -1,5 +1,6 @@
-package actors;
+package decorators;
 
+import actors.ActorImp;
 import messages.Message;
 import messages.QuitMessage;
 

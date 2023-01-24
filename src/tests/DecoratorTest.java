@@ -1,6 +1,8 @@
 package tests;
 
 import actors.*;
+import decorators.EncryptionDecorator;
+import decorators.FirewallDecorator;
 import messages.*;
 
 
