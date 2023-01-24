@@ -2,7 +2,7 @@ package observer;
 
 public class ActorIncorrectFinalization implements ActorEvent{
     @Override
-    public void getInformation() {
-
+    public String getInformation() {
+        return "incorrectEndingActor";
     }
 }

@@ -1,5 +1,5 @@
 package observer;
 
 public interface ActorEvent {
-    void getInformation();
+    String getInformation();
 }

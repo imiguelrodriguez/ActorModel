@@ -10,26 +10,25 @@ import java.util.concurrent.LinkedBlockingQueue;
 public class ActorProxy implements Actor {
     private ActorImp actor;
     private BlockingQueue<Message> queue = new LinkedBlockingQueue<>();
-    public ActorProxy (Actor actor) {
+
+    public ActorProxy(Actor actor) {
         this.actor = (ActorImp) actor;
 
     }
 
     @Override
     public void send(Message message) {
-        if(actor == null) {
+        if (actor == null) {
             actor = new ActorImp();
         }
         actor.send(message);
     }
 
-    public Message receive() {
-        try {
-            return queue.take();
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
+    public Message receive() throws InterruptedException {
+        return queue.take();
     }
+
+
 
     public ActorImp getActor() {
         return this.actor;

@@ -7,7 +7,7 @@ import messages.Message;
 
 public class RingActorsTest {
     static long iniTime;
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         int MAX = 10000;
 
         RingActor[] actors = new RingActor[MAX];

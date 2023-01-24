@@ -15,7 +15,10 @@ public class RingActor extends ActorImp {
     @Override
     public void process(Message message) {
         super.process(message);
-        if(!last) nextActor.send(message);
+        if(!last) {
+
+            nextActor.send(message);
+        }
         else {
             long endTime = System.currentTimeMillis();
             System.out.println("Time passed " + (endTime - RingActorsTest.getIniTime()) + " ms");

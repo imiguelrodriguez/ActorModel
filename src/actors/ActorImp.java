@@ -2,6 +2,10 @@ package actors;
 
 import messages.Message;
 import messages.QuitMessage;
+import observer.ActorFinalization;
+import observer.ActorReceived;
+import observer.ActorSent;
+import observer.MonitorService;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.LinkedBlockingQueue;
@@ -10,6 +14,7 @@ public class ActorImp implements Actor {
     protected BlockingQueue<Message> mailbox = new LinkedBlockingQueue<>();
     private Message state;
     private String name;
+    private MonitorService monitorService = MonitorService.getInstance();
 
     public ActorImp(String name) {
         this.state = null;
@@ -33,10 +38,12 @@ public class ActorImp implements Actor {
                 throw new RuntimeException(e);
             }
         }
+        monitorService.setEvent(new ActorFinalization(), this);
         System.out.println("Killing process...");
     }
 
     public void process(Message message) {
+        monitorService.setEvent(new ActorReceived(), this, message);
         if(message!=null) {
             if(message.getFrom()!=null)
                 System.out.print(message.getFrom()+" ");
@@ -46,6 +53,7 @@ public class ActorImp implements Actor {
 
     @Override
     public void send(Message message) {
+        monitorService.setEvent(new ActorSent(), this, message);
         this.mailbox.add(message);
     }
 
@@ -55,5 +63,9 @@ public class ActorImp implements Actor {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public MonitorService getMonitorService() {
+        return monitorService;
     }
 }

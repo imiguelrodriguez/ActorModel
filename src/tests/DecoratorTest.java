@@ -7,7 +7,7 @@ import messages.*;
 
 
 public class DecoratorTest {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ActorContext actors = ActorContext.getInstance();
         ActorProxy hello = actors.spawnActor("name", new EncryptionDecorator(new HelloWorldActor()));
         hello.send(new Message(null, "It's safe 'cause its ciphered."));
