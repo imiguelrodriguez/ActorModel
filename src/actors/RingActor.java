@@ -15,16 +15,15 @@ public class RingActor extends ActorImp {
     @Override
     public void process(Message message) {
         super.process(message);
-        if(!last) {
-
-            nextActor.send(message);
-        }
-        else {
-            long endTime = System.currentTimeMillis();
-            System.out.println("Time passed " + (endTime - RingActorsTest.getIniTime()) + " ms");
-            super.send(new QuitMessage(this, "QUIT"));
-        }
-
+        System.out.println("Actor" + this.getName());
+            if(!last) {
+                System.out.println("Sending to Actor" + nextActor.getName());
+                nextActor.send(message);
+            }
+            else {
+                System.out.println("Message arrived to last actor.");
+                RingActorsTest.getFirst().getQueue().add(new QuitMessage(null, "QUIT"));
+            }
     }
 
     public RingActor getNext() {

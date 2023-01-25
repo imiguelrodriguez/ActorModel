@@ -15,8 +15,11 @@ public class FirewallDecorator extends ActorImp {
 
     @Override
     public void process(Message message) {
-        Actor a = ActorContext.getInstance().lookup(((ActorProxy) message.getFrom()).getActor().getName());
-        if(a!=null)
+        Actor from = message.getFrom();
+        if(from != null) {
+           from = ActorContext.getInstance().lookup(((ActorImp)(from)).getName());
+        }
+        if(from!=null)
          this.actor.process(message);
         else System.out.println("That actor is not in the list!");
     }

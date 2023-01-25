@@ -24,8 +24,8 @@ public class ActorContext {
         return new ActorProxy(actor);
     }
 
-    public ActorProxy lookup(String name) {
-        return (ActorProxy) actors.get(name);
+    public Actor lookup(String name) {
+        return actors.get(name);
     }
 
     public Set<String> getNames() {

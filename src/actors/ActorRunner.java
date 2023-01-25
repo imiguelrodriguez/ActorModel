@@ -4,7 +4,7 @@ import observer.ActorIncorrectFinalization;
 import observer.MonitorService;
 
 public class ActorRunner implements Runnable {
-    private Actor actor;
+    private final Actor actor;
 
     public ActorRunner(Actor actor) {
         this.actor = actor;

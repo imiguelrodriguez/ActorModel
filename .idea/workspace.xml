@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added classes to observer pattern.">
-      <change afterPath="$PROJECT_DIR$/src/actors/PingPongActor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/PingPongTest.java" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added PingPongActor and its test.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,17 +39,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.projectsettings.compiler.javacompiler&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "DefaultHtmlFileTemplate": "HTML File",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="messages" />
@@ -131,7 +134,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674601122897</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Added PingPongActor and its test.">
+      <created>1674641245035</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1674641245035</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,21 +166,21 @@
     <MESSAGE value="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner." />
     <MESSAGE value="Added Dynamic Proxy and classes for MonitorService." />
     <MESSAGE value="Added classes to observer pattern." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added classes to observer pattern." />
+    <MESSAGE value="Added PingPongActor and its test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added PingPongActor and its test." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/RingActorsTest.java</url>
-          <line>29</line>
-          <option name="timeStamp" value="22" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/decorators/FirewallDecorator.java</url>
           <line>13</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.ClassCastException" package="java.lang" />
+          <option name="timeStamp" value="28" />
+        </breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
