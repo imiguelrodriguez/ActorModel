@@ -1,26 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added Dynamic Proxy and classes for MonitorService.">
-      <change afterPath="$PROJECT_DIR$/src/observer/ActorSent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/Events.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/observer/Traffic.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tests/ObserverTest.java" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added classes to observer pattern.">
+      <change afterPath="$PROJECT_DIR$/src/actors/PingPongActor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tests/PingPongTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorFinalization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorIncorrectFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorIncorrectFinalization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorReceived.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/ActorReceived.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/MonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674581538523</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Added classes to observer pattern.">
+      <created>1674601122897</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1674601122897</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -164,7 +155,8 @@
     <MESSAGE value="EncryptionDecorator working, although treatment for QuitMessage is not completely revised." />
     <MESSAGE value="Added RingActorsTest to test ring model. Also added functionality to decorators. Run decoupled from ActorImp and specified in ActorRunner." />
     <MESSAGE value="Added Dynamic Proxy and classes for MonitorService." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Dynamic Proxy and classes for MonitorService." />
+    <MESSAGE value="Added classes to observer pattern." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added classes to observer pattern." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
