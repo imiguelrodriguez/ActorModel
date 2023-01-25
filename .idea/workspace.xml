@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added PingPongActor and its test.">
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="PingPong and RingActor working.">
+      <change afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxyTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/InsultService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dynamic/InsultServiceImp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,13 +33,16 @@
     <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2IEEfwbNG00JUv7rGbZEslqAnBH" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -141,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674641245035</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="PingPong and RingActor working.">
+      <created>1674647837623</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1674647837623</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -156,6 +165,7 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="First classes for the Actor Model" />
     <MESSAGE value="More changes to the Actor Model" />
     <MESSAGE value="Added classes and packages to the Actor Model" />
@@ -167,7 +177,8 @@
     <MESSAGE value="Added Dynamic Proxy and classes for MonitorService." />
     <MESSAGE value="Added classes to observer pattern." />
     <MESSAGE value="Added PingPongActor and its test." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added PingPongActor and its test." />
+    <MESSAGE value="PingPong and RingActor working." />
+    <option name="LAST_COMMIT_MESSAGE" value="PingPong and RingActor working." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
