@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="PingPong and RingActor working.">
-      <change afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxyTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamic/InsultService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/dynamic/InsultServiceImp.java" afterDir="false" />
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added DynamicProxy and test.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/RingActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ObserverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -150,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674647837623</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Added DynamicProxy and test.">
+      <created>1674648014373</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1674648014373</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -178,7 +186,8 @@
     <MESSAGE value="Added classes to observer pattern." />
     <MESSAGE value="Added PingPongActor and its test." />
     <MESSAGE value="PingPong and RingActor working." />
-    <option name="LAST_COMMIT_MESSAGE" value="PingPong and RingActor working." />
+    <MESSAGE value="Added DynamicProxy and test." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added DynamicProxy and test." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

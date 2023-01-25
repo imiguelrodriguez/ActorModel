@@ -10,7 +10,6 @@ import java.util.Set;
 
 public class RingActorsTest {
     static long iniTime, endTime;
-    static ActorProxy first;
     public static void main(String[] args) throws InterruptedException {
         int MAX = 100;
 
@@ -30,10 +29,12 @@ public class RingActorsTest {
             else actors[i].setNext(actors[0]);
         }
 
-        first = new ActorProxy(context.lookup("0"));
+        ActorProxy first = new ActorProxy(context.lookup("0"));
+        ActorProxy last = new ActorProxy(context.lookup((MAX-1) + ""));
+        ((RingActor)last.getActor()).setAp(last);
         iniTime = System.currentTimeMillis();
         first.send(new Message(null, "Broken telephone."));
-        first.receive();
+        last.receive();
         endTime = System.currentTimeMillis();
 
         Set<String> names = context.getNames();
@@ -45,7 +46,4 @@ public class RingActorsTest {
 
     }
 
-    public static ActorProxy getFirst() {
-        return first;
-    }
 }

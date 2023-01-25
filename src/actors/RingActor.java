@@ -6,6 +6,7 @@ import tests.RingActorsTest;
 
 public class RingActor extends ActorImp {
     private RingActor nextActor;
+    private ActorProxy ap = null;
     private boolean last;
     public RingActor(boolean last) {
         super();
@@ -22,10 +23,12 @@ public class RingActor extends ActorImp {
             }
             else {
                 System.out.println("Message arrived to last actor.");
-                RingActorsTest.getFirst().getQueue().add(new QuitMessage(null, "QUIT"));
+                this.ap.getQueue().add(new QuitMessage(null, "QUIT"));
             }
     }
-
+    public void setAp(ActorProxy ap) {
+        this.ap = ap;
+    }
     public RingActor getNext() {
         return this.nextActor;
     }
