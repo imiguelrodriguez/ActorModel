@@ -5,12 +5,15 @@ import actors.ActorContext;
 import actors.ActorProxy;
 import actors.RingActor;
 import messages.Message;
+import messages.QuitMessage;
 import observer.ActorListener;
+import observer.Events;
 import observer.MonitorService;
 import observer.Traffic;
 
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Set;
 
 
 public class ObserverTest {
@@ -39,20 +42,24 @@ public class ObserverTest {
         first.send(new Message(null, "Hi there!"));
         last.receive();
 
-        HashMap<Traffic, ArrayList<Actor>> messagesTraffic;
-        messagesTraffic = monitorService.getTraffic();
+        HashMap<Traffic, ArrayList<Actor>> messagesTraffic = monitorService.getTraffic();
         System.out.println(messagesTraffic.toString());
 
-        HashMap<Actor, ArrayList<Message>> sentMessages;
-        sentMessages = monitorService.getSentMessages(first.getActor());
+        HashMap<Actor, ArrayList<Message>> sentMessages = monitorService.getSentMessages(first.getActor());
         System.out.println(sentMessages.toString());
 
-        HashMap<Actor, ArrayList<Message>> receivedMessages;
-        receivedMessages = monitorService.getReceivedMessages(first.getActor());
+        HashMap<Actor, ArrayList<Message>> receivedMessages = monitorService.getReceivedMessages(first.getActor());
         System.out.println(receivedMessages.toString());
 
-        System.out.println("");
-        int nMess = monitorService.getNumberOfMessages(first.getActor());
-        System.out.println("The number of messages sent by the actor " + first.getActor().getName() + " is "+ nMess);
+        HashMap<Events, ArrayList<Actor>> events = monitorService.getEvents();
+        System.out.println(events);
+
+        int nMessages = monitorService.getNumberOfMessages(first.getActor());
+        System.out.println("The number of messages sent by the actor " + first.getActor().getName() + " is "+ nMessages);
+
+        Set<String> names = context.getNames();
+        for(String name : names) {
+            context.lookup(name).send(new QuitMessage(null, "QUIT"));
+        }
     }
 }

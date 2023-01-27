@@ -16,7 +16,8 @@ public class MonitorService  {
     private List<ActorListener> listeners = new ArrayList<>();;
     private HashMap<Actor, ArrayList<Message>> mSent = new HashMap<>();
     private HashMap<Actor, ArrayList<Message>> mReceived = new HashMap<>();
-    private HashMap<Events, ArrayList<Actor>> events = new HashMap<>();
+    private HashMap<ActorEvent, ArrayList<Actor>> events = new HashMap<>();
+
 
     public MonitorService() {
     }
@@ -121,11 +122,24 @@ public class MonitorService  {
     }
 
     public void setEvent(ActorEvent event, Actor actor) {
+        ArrayList<Actor> list = events.get(event);
+        if(list==null) list = new ArrayList<>();
+        list.add(actor);
+        events.put(event, list);
 
+        notifySubscribers(event);
     }
 
-    public HashMap<Events, ActorEvent> getEvents() {
-
-        return null;
+    public HashMap<Events, ArrayList<Actor>> getEvents() {
+        HashMap<Events, ArrayList<Actor>> map = new HashMap<>();
+        for(ActorEvent e : this.events.keySet()) {
+            switch (e) {
+                case ActorCreation e1 -> map.put(Events.CREATED, this.events.get(e));
+                case ActorFinalization e1 -> map.put(Events.STOPPED, this.events.get(e));
+                case ActorIncorrectFinalization e1 -> map.put(Events.ERROR, this.events.get(e));
+                default -> map.put(Events.OTHER, this.events.get(e));
+            }
+        }
+        return map;
     }
 }
