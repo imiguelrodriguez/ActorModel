@@ -1,5 +1,6 @@
 package actors;
 
+import observer.ActorCreation;
 import observer.ActorIncorrectFinalization;
 import observer.MonitorService;
 
@@ -14,7 +15,7 @@ public class ActorRunner implements Runnable {
     public void run() {
         MonitorService ms = ((ActorImp) actor).getMonitorService();
         try {
-           ms.setEvent(new ActorIncorrectFinalization(), this.actor);
+           ms.setEvent(new ActorCreation(), this.actor);
             ((ActorImp) actor).actorLoop();
         } catch (Exception e) {
             ms.setEvent(new ActorIncorrectFinalization(), this.actor );

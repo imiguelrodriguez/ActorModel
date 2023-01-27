@@ -16,4 +16,12 @@ public class Message {
     public Actor getFrom() {
         return this.from;
     }
+
+    public void setFrom(Actor from) {
+        this.from = from;
+    }
+
+    public boolean emptyMessage() {
+        return this.text.length()==0;
+    }
 }

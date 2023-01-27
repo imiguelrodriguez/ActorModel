@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added ObserverTest (the only thing left to do is to update the events, both in MonitorService and ObserverTest).">
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added events to MonitorService.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/actors/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/Events.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/observer/MonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/tests/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ObserverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -164,7 +168,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674649841476</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Added events to MonitorService.">
+      <created>1674818065528</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1674818065528</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -194,20 +205,26 @@
     <MESSAGE value="PingPong and RingActor working." />
     <MESSAGE value="Added DynamicProxy and test." />
     <MESSAGE value="Added ObserverTest (the only thing left to do is to update the events, both in MonitorService and ObserverTest)." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added ObserverTest (the only thing left to do is to update the events, both in MonitorService and ObserverTest)." />
+    <MESSAGE value="Added events to MonitorService." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added events to MonitorService." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/decorators/FirewallDecorator.java</url>
-          <line>13</line>
-          <option name="timeStamp" value="25" />
-        </line-breakpoint>
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.ClassCastException" package="java.lang" />
           <option name="timeStamp" value="28" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tests/ObserverTest.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/actors/ActorRunner.java</url>
+          <line>20</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

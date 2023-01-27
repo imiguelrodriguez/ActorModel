@@ -19,7 +19,7 @@ public class ProxyTest {
             throw new RuntimeException(e);
         }
         System.out.println(m.getText());
-        aProxy3.send(new Message(null, "First message , helloo!"));
+        aProxy3.send(new Message(null, "First message , hello!"));
         aProxy1.send(new AddInsultMessage("Motherfucker"));
         aProxy1.send(new GetAllInsultsMessage(aProxy1));
         List<Message> messages = new ArrayList<>();

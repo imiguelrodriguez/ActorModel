@@ -18,7 +18,7 @@ import java.util.Set;
 
 public class ObserverTest {
     public static void main(String[] args) throws InterruptedException {
-        int MAX = 100;
+        int MAX = 10;
         ActorContext context = ActorContext.getInstance();
         RingActor [] actors = new RingActor[MAX];
         MonitorService monitorService = MonitorService.getInstance();

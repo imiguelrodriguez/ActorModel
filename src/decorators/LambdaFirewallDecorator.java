@@ -22,8 +22,20 @@ public class LambdaFirewallDecorator extends ActorImp {
 
     @Override
     public void send(Message message) {
-        if(message instanceof AddClosureMessage)
-            this.predicateList.add(((AddClosureMessage)message).getPredicate());
-
+        if(message instanceof AddClosureMessage) {
+            this.predicateList.add(((AddClosureMessage) message).getPredicate());
+            System.out.println("Added closure " + ((AddClosureMessage) message).getPredicate());
+        }
+        else { // check if the message fulfills the requirements
+            for(Predicate<Message> predicate : this.predicateList) {
+                if(predicate.test(message)) {
+                    System.out.println("Message " + message.getText() + " fulfills the lambda conditions.");
+                    //this.mailbox.add(message);
+                    actor.send(message);
+                    break;
+                }
+                else System.out.println("Message " + message.getText() + " does not fulfill the lambda conditions.");
+            }
+        }
     }
 }

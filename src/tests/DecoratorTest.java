@@ -3,6 +3,7 @@ package tests;
 import actors.*;
 import decorators.EncryptionDecorator;
 import decorators.FirewallDecorator;
+import decorators.LambdaFirewallDecorator;
 import messages.*;
 
 
@@ -21,6 +22,11 @@ public class DecoratorTest {
         ActorProxy hello3 = actors.spawnActor("hello3", new FirewallDecorator(new EncryptionDecorator(new HelloWorldActor())));
         hello3.send(new Message(null, "Hi"));
         hello3.getActor().send(new Message(hello2.getActor(), "This is confidential."));
+
+        ActorProxy hello4 = actors.spawnActor("hello4", new LambdaFirewallDecorator(new HelloWorldActor()));
+        hello4.send(new AddClosureMessage(null, a -> a.emptyMessage()));
+        hello4.send(new Message(null, ""));
+        hello4.send(new Message(null, "Hello"));
     }
 }
 
