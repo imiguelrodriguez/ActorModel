@@ -1,16 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added events to MonitorService.">
+    <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added two JUnit Tests.">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/actors/RingActorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/decorators/LambdaFirewallDecoratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/actors/ActorRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dynamic/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/DecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ObserverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tests/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ActorSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ActorSystem.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/Actor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorRunner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/DynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/HelloWorldActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/InsultActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/InsultActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/PingPongActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/PingPongActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/RingActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/EncryptionDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/FirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/LambdaFirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamic/InsultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/InsultService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dynamic/InsultServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/InsultServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/AddClosureMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/AddClosureMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/AddInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/AddInsultMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/GetAllInsultsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/GetAllInsultsMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/GetInsultMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/InsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/InsultMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/messages/QuitMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/QuitMessage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorCreation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorFinalization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorIncorrectFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorIncorrectFinalization.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorReceived.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorReceived.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/ActorSent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorSent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Events.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/MonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/observer/Traffic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Traffic.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DecoratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DynamicProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ObserverTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/PingPongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/PingPongTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ProxyTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RingActorsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +71,7 @@
         <option value="Interface" />
         <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -50,16 +98,51 @@
     "DefaultHtmlFileTemplate": "HTML File",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "project.structure.last.edited": "Project",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "last_opened_file_path": "C:/Users/Ignacio Miguel/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "reference.projectsettings.compiler.javacompiler"
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
       <recent name="messages" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="decorators" />
+      <recent name="actors" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="RingActorTest.RingActor" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ActorSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="actors.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="actors" />
+      <option name="MAIN_CLASS_NAME" value="actors.RingActorTest" />
+      <option name="METHOD_NAME" value="RingActor" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.RingActorTest.RingActor" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -175,7 +258,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674818065528</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="All working except Decorators.">
+      <created>1674820498265</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1674820498265</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,7 +296,9 @@
     <MESSAGE value="Added DynamicProxy and test." />
     <MESSAGE value="Added ObserverTest (the only thing left to do is to update the events, both in MonitorService and ObserverTest)." />
     <MESSAGE value="Added events to MonitorService." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added events to MonitorService." />
+    <MESSAGE value="All working except Decorators." />
+    <MESSAGE value="Added two JUnit Tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added two JUnit Tests." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -215,16 +307,6 @@
           <properties class="java.lang.ClassCastException" package="java.lang" />
           <option name="timeStamp" value="28" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/tests/ObserverTest.java</url>
-          <line>30</line>
-          <option name="timeStamp" value="30" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/actors/ActorRunner.java</url>
-          <line>20</line>
-          <option name="timeStamp" value="33" />
-        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

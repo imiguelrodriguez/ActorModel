@@ -1,6 +1,9 @@
-package actors;
+package dynamic;
+
+import actors.ActorProxy;
 
 import java.lang.reflect.InvocationHandler;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
@@ -21,7 +24,21 @@ public class DynamicProxy implements InvocationHandler {
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
         Object invocationResult = null;
-
-        return null;
+        try
+        {
+            System.out.println("Method " + method.getName() + " mediated by DynamicProxy");
+            invocationResult = method.invoke(this.target, args);
+        }
+        catch(InvocationTargetException ite)
+        {
+            throw ite.getTargetException();
+        }
+        catch(Exception e)
+        {
+            System.err.println("Invocation of " + method.getName() + " failed");
+        }
+        finally{
+            return invocationResult;
+        }
     }
 }

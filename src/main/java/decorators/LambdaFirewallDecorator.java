@@ -38,4 +38,8 @@ public class LambdaFirewallDecorator extends ActorImp {
             }
         }
     }
+
+    public List<Predicate<Message>> getPredicateList() {
+        return predicateList;
+    }
 }

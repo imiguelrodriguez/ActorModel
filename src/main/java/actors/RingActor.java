@@ -35,4 +35,8 @@ public class RingActor extends ActorImp {
     public void setNext(RingActor next) {
         this.nextActor = next;
     }
+
+    public boolean isLast() {
+        return last;
+    }
 }

@@ -68,4 +68,8 @@ public class ActorImp implements Actor {
     public MonitorService getMonitorService() {
         return monitorService;
     }
+
+    public BlockingQueue<Message> getMailbox() {
+        return mailbox;
+    }
 }
