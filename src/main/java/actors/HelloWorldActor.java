@@ -10,9 +10,10 @@ public class HelloWorldActor extends ActorImp {
 
     @Override
     public void process(Message message) {
+        super.process(message);
         if(message!=null) {
             System.out.print("Hello World Actor: ");
-            System.out.println(message.getText());
+            System.out.println(message.getText() + " from " + message.getFrom());
         }
     }
 }

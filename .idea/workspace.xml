@@ -1,63 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ActorSystem:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c3f340-6e93-4275-8eba-11f17b26504c" name="Changes" comment="Added two JUnit Tests.">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_0_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_engine_5_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_engine_1_4_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_1_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/actors/RingActorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/decorators/LambdaFirewallDecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ActorSystem_jar.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ActorSystem.iml" beforeDir="false" afterPath="$PROJECT_DIR$/ActorSystem.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/Actor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/Actor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorContext.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/ActorRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/DynamicProxy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/HelloWorldActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/HelloWorldActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/InsultActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/InsultActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/PingPongActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/PingPongActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/RingActor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/EncryptionDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/FirewallDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/decorators/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/LambdaFirewallDecorator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic/InsultService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/InsultService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dynamic/InsultServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/InsultServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/AddClosureMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/AddClosureMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/AddInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/AddInsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/GetAllInsultsMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/GetAllInsultsMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/GetInsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/GetInsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/InsultMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/InsultMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/Message.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/messages/QuitMessage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/messages/QuitMessage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorCreation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorCreation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorEvent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorFinalization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorIncorrectFinalization.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorIncorrectFinalization.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorReceived.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorReceived.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/ActorSent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/ActorSent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/Events.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Events.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/MonitorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/observer/Traffic.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/Traffic.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DecoratorTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DynamicProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ObserverTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ObserverTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/PingPongTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/PingPongTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/ProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/ProxyTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tests/RingActorsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/RingActorsTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/ActorContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/ActorImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/ActorImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/HelloWorldActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/HelloWorldActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/InsultActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/InsultActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/PingPongActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/PingPongActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/actors/RingActor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/actors/RingActor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decorators/EncryptionDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/EncryptionDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decorators/FirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/FirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/decorators/LambdaFirewallDecorator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/decorators/LambdaFirewallDecorator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dynamic/DynamicProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dynamic/DynamicProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/observer/MonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/observer/MonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/DecoratorTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DecoratorTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/tests/DynamicProxyTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/tests/DynamicProxyTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -102,11 +69,11 @@
     "com.intellij.openapi.externalSystem.service.settings.ExternalSystemGroupConfigurable": "ALL",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "last_opened_file_path": "C:/Users/Ignacio Miguel/.m2/repository/org/apache/maven/plugins/maven-compiler-plugin",
-    "project.structure.last.edited": "Modules",
+    "last_opened_file_path": "C:/Users/Ignacio Miguel/Desktop/NACHO/UNI/QUART/PRIMER QUADRIMESTRE/TÈCNIQUES AVANÇADES DE PROGRAMACIÓ/TAP0/ActorSystem/out",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+    "settings.editor.selected.configurable": "com.intellij.jarRepository.settings.RemoteRepositoriesConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -121,7 +88,46 @@
       <recent name="actors" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.DecoratorTest">
+    <configuration name="DecoratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.DecoratorTest" />
+      <module name="ActorSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DynamicProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.DynamicProxyTest" />
+      <module name="ActorSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ProxyTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tests.ProxyTest" />
+      <module name="ActorSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tests.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RingActorTest.RingActor" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ActorSystem" />
       <extension name="coverage">
@@ -140,6 +146,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.DecoratorTest" />
+        <item itemvalue="Application.DynamicProxyTest" />
+        <item itemvalue="Application.ProxyTest" />
         <item itemvalue="JUnit.RingActorTest.RingActor" />
       </list>
     </recent_temporary>
@@ -265,7 +274,14 @@
       <option name="project" value="LOCAL" />
       <updated>1674820498265</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Added two JUnit Tests.">
+      <created>1674826475367</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1674826475367</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

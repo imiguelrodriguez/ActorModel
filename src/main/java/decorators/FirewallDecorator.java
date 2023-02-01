@@ -9,7 +9,7 @@ import messages.Message;
 public class FirewallDecorator extends ActorImp {
     private ActorImp actor;
     public FirewallDecorator(ActorImp actor) {
-        super(actor.getName());
+        this.name = actor.getName();
         this.actor = actor;
     }
 

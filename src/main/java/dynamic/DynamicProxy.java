@@ -1,11 +1,17 @@
 package dynamic;
 
 import actors.ActorProxy;
+import messages.AddInsultMessage;
+import messages.GetAllInsultsMessage;
+import messages.GetInsultMessage;
+import messages.Message;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DynamicProxy implements InvocationHandler {
     private Object target = null;
@@ -23,22 +29,34 @@ public class DynamicProxy implements InvocationHandler {
     }
     @Override
     public Object invoke(Object proxy, Method method, Object[] args) throws Throwable {
-        Object invocationResult = null;
+        List<Object> result = new ArrayList<>();
         try
         {
             System.out.println("Method " + method.getName() + " mediated by DynamicProxy");
-            invocationResult = method.invoke(this.target, args);
-        }
-        catch(InvocationTargetException ite)
-        {
-            throw ite.getTargetException();
+            switch (method.getName()) {
+                case "getAllInsults" -> actor.send(new GetAllInsultsMessage(actor));
+                case "getInsult" -> actor.send(new GetInsultMessage(actor));
+                case "addInsult" -> actor.send(new AddInsultMessage((String) args[0]));
+                default -> System.out.println("This method does not exist.");
+            }
+            if(method.getReturnType() != void.class) {
+                do {
+                    try {
+                        result.add(actor.receive().getText());
+                    } catch (InterruptedException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+                while (!actor.getQueue().isEmpty());
+            }
         }
         catch(Exception e)
         {
             System.err.println("Invocation of " + method.getName() + " failed");
         }
         finally{
-            return invocationResult;
+            return result.size() == 0 ? null:result.size() == 1 ? result.get(0):result;
         }
+
     }
 }

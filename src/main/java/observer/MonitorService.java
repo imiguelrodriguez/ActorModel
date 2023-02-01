@@ -31,13 +31,15 @@ public class MonitorService  {
         ActorContext context = ActorContext.getInstance();
         Actor actor = context.lookup(name);
         if(actor != null) {
-
+            if(actor instanceof ActorListener)
+                subscribe((ActorListener) actor);
         }
     }
 
     public void monitorAllActors(){
         ActorContext context = ActorContext.getInstance();
-
+        ArrayList<Actor> list = context.getAllActors();
+        list.stream().filter(actor -> actor instanceof ActorListener).toList().forEach(actor -> subscribe((ActorListener) actor));
     }
 
     public int getNumberOfMessages(Actor a) {
@@ -47,17 +49,17 @@ public class MonitorService  {
     public void setEvent(ActorEvent event, Actor actor, Message msg) {
         switch (event) {
             case ActorSent e -> {
+                ArrayList<Message> list = mSent.get(actor);
+                if (list == null) list = new ArrayList<>();
+                list.add(msg);
+                mSent.put(actor, list);
+            }
+
+            case ActorReceived e -> {
                 ArrayList<Message> list = mReceived.get(actor);
                 if (list == null) list = new ArrayList<>();
                 list.add(msg);
                 mReceived.put(actor, list);
-            }
-
-            case ActorReceived e -> {
-                ArrayList<Message> list = mSent.get(actor);
-                if (list == null) list = new ArrayList<Message>();
-                list.add(msg);
-                mSent.put(actor, list);
             }
             default -> throw new IllegalStateException("Unexpected value: " + event);
         }

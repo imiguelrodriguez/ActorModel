@@ -12,6 +12,7 @@ public class LambdaFirewallDecorator extends ActorImp {
     private ActorImp actor;
     private List<Predicate<Message>> predicateList = new ArrayList<>();
     public LambdaFirewallDecorator(ActorImp actor) {
+        this.name = actor.getName();
         this.actor = actor;
     }
 
@@ -30,7 +31,7 @@ public class LambdaFirewallDecorator extends ActorImp {
             for(Predicate<Message> predicate : this.predicateList) {
                 if(predicate.test(message)) {
                     System.out.println("Message " + message.getText() + " fulfills the lambda conditions.");
-                    //this.mailbox.add(message);
+                    this.mailbox.add(message);
                     actor.send(message);
                     break;
                 }

@@ -1,5 +1,7 @@
 package actors;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -30,5 +32,14 @@ public class ActorContext {
 
     public Set<String> getNames() {
         return actors.keySet();
+    }
+    public ArrayList<Actor> getAllActors() {
+        return new ArrayList<>(this.actors.values().stream().toList());
+    }
+
+    public void removeActor(String name) {
+        Actor a = lookup(name);
+        if(a!=null)
+            this.actors.remove(name);
     }
 }

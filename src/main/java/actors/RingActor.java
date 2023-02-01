@@ -2,6 +2,7 @@ package actors;
 
 import messages.Message;
 import messages.QuitMessage;
+import observer.ActorSent;
 import tests.RingActorsTest;
 
 public class RingActor extends ActorImp {
@@ -11,6 +12,13 @@ public class RingActor extends ActorImp {
     public RingActor(boolean last) {
         super();
         this.last = last;
+    }
+
+    @Override
+    public void send(Message message) {
+        if(message.getFrom()!=null) monitorService.setEvent(new ActorSent(), message.getFrom(), message);
+        message.setFrom(this);
+        this.mailbox.add(message);
     }
 
     @Override

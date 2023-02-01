@@ -19,6 +19,7 @@ public class PingPongActor extends ActorImp{
 
     @Override
     public void process(Message message) {
+        super.process(message);
         System.out.println("I'm " + this.getName() + ". Processing message from " + ((ActorProxy)message.getFrom()).getActor().getName());
         System.out.println("Message: " + message.getText());
 
