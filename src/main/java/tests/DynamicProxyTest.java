@@ -2,6 +2,7 @@ package tests;
 
 import actors.*;
 import dynamic.*;
+import messages.QuitMessage;
 
 public class DynamicProxyTest {
     public static void main(String[] args) throws InterruptedException {
@@ -15,5 +16,6 @@ public class DynamicProxyTest {
         insulter.addInsult("idiot");
         System.out.println(insulter.getInsult());
         System.out.println(insulter.getAllInsults());
+        actor.send(new QuitMessage(null, "Quit"));
     }
 }

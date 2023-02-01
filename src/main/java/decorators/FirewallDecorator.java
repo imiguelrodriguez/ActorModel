@@ -17,7 +17,7 @@ public class FirewallDecorator extends ActorImp {
     public void process(Message message) {
         Actor from = message.getFrom();
         if(from != null) {
-           from = ActorContext.getInstance().lookup(((ActorImp)(from)).getName());
+            from = ActorContext.getInstance().lookup(((ActorImp)from).getName());
         }
         if(from!=null)
          this.actor.process(message);

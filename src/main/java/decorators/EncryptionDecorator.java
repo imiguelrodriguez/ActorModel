@@ -27,7 +27,7 @@ public class EncryptionDecorator extends ActorImp {
     @Override
     public void process(Message message) {
         String decryptedString = EncryptionDecorator.decipher(message.getText());
-        Message decryptedMessage = new Message(message.getFrom(), decryptedString);
+        Message decryptedMessage = new Message(this, decryptedString);
         this.actor.process(decryptedMessage);
     }
 
